@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:screenshot/screenshot.dart';
@@ -113,8 +115,22 @@ class _PaintingCanvasState extends State<PaintingCanvas> {
               ),
               const Spacer(),
               _buildIconButton(
-                () async => await action.saveDoodleData(_screenshotController),
+                () async {
+                  Uint8List? imageData = await _screenshotController.capture();
+                  if (imageData == null) return;
+                  await action.saveDoodleData(imageData);
+                },
                 Icons.check_rounded,
+                color,
+              ),
+              const SizedBox(width: 10),
+              _buildIconButton(
+                () async {
+                  Uint8List? imageData = await _screenshotController.capture();
+                  if (imageData == null) return;
+                  await action.shareDoodle(imageData, vm.title);
+                },
+                Icons.share_rounded,
                 color,
               ),
               const SizedBox(width: 10),
@@ -128,7 +144,7 @@ class _PaintingCanvasState extends State<PaintingCanvas> {
             ],
           ),
           const SizedBox(
-            height: 15,
+            height: 10,
           ),
           _buildIconButton(
             vm.undo,
