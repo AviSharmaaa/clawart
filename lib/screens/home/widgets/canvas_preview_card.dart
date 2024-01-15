@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:intl/intl.dart' show DateFormat;
+import 'package:flutter_svg/svg.dart' show SvgPicture;
 
 import '../../../theme/assets.dart';
 import '../../../theme/colors.dart';

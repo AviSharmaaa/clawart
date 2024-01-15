@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show Colors, Color, MaterialColor;
 
 class AppColor {
   static List<Color> availableColors = const [

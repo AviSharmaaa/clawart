@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:provider/provider.dart' show MultiProvider, ChangeNotifierProvider, Provider;
 
 import 'core/database/database.dart';
 import 'core/navigation_handler.dart';
@@ -18,11 +18,11 @@ void main() async {
   var homeVM = HomeViewModel(db);
   await db.initialize();
   await homeVM.fetchAllCanvases();
-  runApp(MeowMural(db, homeVM));
+  runApp(Clawart(db, homeVM));
 }
 
-class MeowMural extends StatelessWidget {
-  const MeowMural(this.db, this.homeVM, {super.key});
+class Clawart extends StatelessWidget {
+  const Clawart(this.db, this.homeVM, {super.key});
   final Database db;
   final HomeViewModel homeVM;
 
@@ -41,7 +41,7 @@ class MeowMural extends StatelessWidget {
         ),
       ],
       builder: (_, __) => MaterialApp(
-        title: 'Meow Mural',
+        title: 'Clawart',
         debugShowCheckedModeBanner: false,
         initialRoute: RouteName.home,
         onGenerateRoute: Routes.generate,

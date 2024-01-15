@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show Color, ChangeNotifier, DragStartDetails, DragUpdateDetails, DragEndDetails;
 
 import '../../../core/database/database.dart';
 import '../../../theme/colors.dart';

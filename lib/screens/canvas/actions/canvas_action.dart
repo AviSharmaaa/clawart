@@ -1,10 +1,10 @@
-import 'dart:io';
-import 'dart:typed_data';
+import 'dart:io' show File;
+import 'dart:typed_data' show Uint8List;
 
-import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:provider/provider.dart';
-import 'package:share_plus/share_plus.dart';
+import 'package:flutter/material.dart' show BuildContext;
+import 'package:path_provider/path_provider.dart' show getApplicationDocumentsDirectory;
+import 'package:provider/provider.dart' show Provider;
+import 'package:share_plus/share_plus.dart' show Share, XFile;
 
 import '../../../components/base_action.dart';
 import '../../../components/loader.dart';

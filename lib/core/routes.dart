@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart' show CupertinoPageRoute, Route, RouteSettings;
 import '../screens/canvas/canvas.dart';
 import '../screens/home/home.dart';
 import 'route_name.dart';

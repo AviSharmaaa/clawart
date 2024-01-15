@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_svg/svg.dart' show SvgPicture;
+import 'package:provider/provider.dart' show Consumer;
 
 import '../../../theme/assets.dart';
 import '../../../theme/colors.dart';

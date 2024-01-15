@@ -1,5 +1,5 @@
-import 'dart:typed_data';
-import 'package:flutter/material.dart';
+import 'dart:typed_data' show Uint8List;
+import 'package:flutter/material.dart' show ChangeNotifier;
 import '../../../core/database/database.dart';
 import '../models/model.dart';
 

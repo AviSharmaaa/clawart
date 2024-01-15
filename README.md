@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-   <h1 align="center">Clawart </h1>
+   <h1 align="center">Clawart</h1>
   </a>
 </p>
 
@@ -31,14 +31,11 @@
 
 <img align="center" src="readme-assets\banner.png"/>
 
-- Onboarding
-<img src="readme-assets\onboarding.png"/>
+## Demo Video
 
-- Drawing Canvas
-<img src="readme-assets\drawing_canvas.png" />
-
-- Saved Canvases
-<img src="readme-assets\saved_canvases.png" />
+<video width="400px" height="300px" controls>
+  <source src="readme-assets\clawart_demo.mp4" type="video/mp4">
+</video>
 
 ## 🛠️ Installation Steps
 

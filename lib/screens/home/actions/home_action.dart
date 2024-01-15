@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/material.dart' show BuildContext;
+import 'package:provider/provider.dart' show Provider;
 
 import '../../../components/base_action.dart';
 import '../../../components/easter_egg.dart';

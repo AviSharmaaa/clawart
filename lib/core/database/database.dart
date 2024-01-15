@@ -1,9 +1,9 @@
-import 'dart:convert';
-import 'dart:typed_data';
+import 'dart:convert' show base64Encode, base64Decode, utf8;
+import 'dart:typed_data' show Uint8List;
 
 import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:path_provider/path_provider.dart' show getApplicationDocumentsDirectory;
 
 import '../../screens/canvas/models/model.dart';
 import '../../screens/home/models/model.dart';

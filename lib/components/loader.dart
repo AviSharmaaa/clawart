@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
+import 'package:rive/rive.dart' show RiveAnimation;
 
 import '../core/navigation_service.dart';
 import '../theme/assets.dart';

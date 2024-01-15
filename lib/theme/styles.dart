@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show TextStyle, FontWeight;
 
 class P22 {
   static TextStyle regular = const TextStyle(

@@ -1,7 +1,7 @@
-import 'dart:math';
+import 'dart:math' show Random;
 
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
+import 'package:rive/rive.dart' show RiveAnimation;
 
 import '../core/navigation_service.dart';
 import '../theme/assets.dart';
@@ -31,7 +31,7 @@ abstract class EasterEgg {
 class EasterEggOverlay extends StatelessWidget {
   const EasterEggOverlay({super.key, required this.catArtFact});
   final String catArtFact;
-  final Duration _duration = const Duration(milliseconds: 1000);
+  final Duration _duration = const Duration(milliseconds: 500);
 
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:screenshot/screenshot.dart';
+import 'package:provider/provider.dart' show Consumer;
+import 'package:screenshot/screenshot.dart' show ScreenshotController, Screenshot;
 
 import '../../theme/colors.dart';
 import '../../theme/styles.dart';
